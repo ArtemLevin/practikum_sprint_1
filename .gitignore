@@ -1,0 +1,70 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+*.egg-info/
+.eggs/
+
+# Virtual environment
+env/
+.venv/
+.virtualenv/
+.idea/
+.mypy_cache/
+.dmypy.json
+.pytest_cache/
+.vscode/
+
+# Django specific files
+*.log
+*.pot
+*.py[cod]
+db.sqlite3
+db.sqlite3-journal
+
+# Media and static files
+media/
+staticfiles/
+static/
+
+# Secrets and environment variables
+.env
+.env.*
+config.json
+secrets.json
+
+# Migrations (optional, if you prefer regenerating migrations)
+**/migrations/*
+
+# PostgreSQL
+*.pgsql
+*.pgpass
+pgdata/
+.pgsql_tmp/
+
+# Docker (if using Docker)
+*.env
+docker-compose.override.yml
+.dockerignore
+
+# IDE and text editors
+.idea/
+*.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+#other files
+experiments.py
