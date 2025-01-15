@@ -8,7 +8,7 @@ class GenreFilmworkInline(admin.TabularInline):
 
 class PersonFilmworkInline(admin.TabularInline):
     model = PersonFilmwork
-    autocomplete_fields = ('person_id', 'role')
+    #autocomplete_fields = ('person_id', 'role')
 
 
 @admin.register(Genre)
@@ -22,7 +22,7 @@ class FilmworkAdmin(admin.ModelAdmin):
     inlines = (GenreFilmworkInline, PersonFilmworkInline)
     search_fields = ('title', 'description')
     list_display = ('title', 'get_genres', 'creation_date', 'rating')
-    list_filter = ('title', 'short_description', 'creation_date', 'rating')
+    list_filter = ('title', 'creation_date', 'rating')
 
     def short_description(self, obj):
         return (obj.description[:50] + "...") if len(obj.description) > 50 else obj.description
